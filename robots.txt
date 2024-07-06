@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: /admin/
+Disallow: /cgi-bin/
+Disallow: /tmp/
+Disallow: /junk/
+
+Sitemap: http://www.digitsaccountingservices.com/sitemap.xml
