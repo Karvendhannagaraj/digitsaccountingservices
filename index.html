@@ -10,7 +10,7 @@
     <meta name="author" content="Balaji Govindaraj - B LEDGER BOOKKEEPING">
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
     <meta name="googlebot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
-    <meta name="theme-color" content="#0C1524">
+    <meta name="theme-color" content="#01294D">
     <meta name="format-detection" content="telephone=no">
     <meta name="geo.region" content="US">
     <meta name="geo.placename" content="United States">
@@ -185,7 +185,12 @@
 	<!-- Magnific Popup Core Css File -->
 	<link rel="stylesheet" href="css/magnific-popup.css">
 	<!-- Main Custom Css -->
-	<link href="css/custom.css?v=6" rel="stylesheet" media="screen">
+	<link href="css/custom.css?v=11" rel="stylesheet" media="screen">
+	<script>
+		if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches && 'IntersectionObserver' in window) {
+			document.documentElement.classList.add('js-ready');
+		}
+	</script>
 </head>
 <body>
     <!-- Google Tag Manager (noscript) -->
@@ -193,10 +198,10 @@
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
     <!-- Preloader Start -->
-	<div class="preloader">
+	<div class="preloader" aria-hidden="true">
 		<div class="loading-container">
 			<div class="loading"></div>
-			<div id="loading-icon"><img src="#" alt=""></div>
+			<div id="loading-icon"><img src="images/favicon.png" width="44" height="44" alt=""></div>
 		</div>
 	</div>
 	<!-- Preloader End -->
@@ -207,7 +212,7 @@
 				<div class="container">
 					<!-- Logo Start -->
 					<a class="navbar-brand" href="index.html">
-						<img src="images/logo_new.png" width="232" height="64" alt="B LEDGER BOOKKEEPING logo">
+						<img src="images/logo_new.png" width="260" height="66" alt="B LEDGER BOOKKEEPING logo">
 					</a>
 					<!-- Logo End -->
 
@@ -246,15 +251,24 @@
                 <div class="col-lg-6">
                     <!-- Hero Left Content Start -->
                     <div class="hero-content">
+                        <div class="hero-badge">
+                            <span class="hero-badge-dot" aria-hidden="true"></span>
+                            <span>US Small Business Bookkeeping &bull; Bookkeeping Only</span>
+                        </div>
                         <div class="section-title">
                             <h1 class="text-anime-style-4">Dedicated bookkeeping built for US small businesses</h1>
                         </div>
-                        <div class="hero-content-body wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="hero-content-body">
                             <p>At B LEDGER BOOKKEEPING, we focus exclusively on accurate, reliable monthly bookkeeping for US freelancers and small businesses. From bank reconciliation to clean financial statements, we keep your books balanced—without tax services or contracts—so you can focus on growth.</p>
                         </div>
-                        <div class="hero-content-footer wow fadeInUp" data-wow-delay="0.75s">
+                        <div class="hero-content-footer">
                             <a href="#contact" class="btn-default">work with us</a>
                             <a href="#services" class="btn-default btn-highlighted">view our services</a>
+                        </div>
+                        <div class="hero-trust-strip">
+                            <span class="hero-trust-item"><i class="fas fa-check-circle" aria-hidden="true"></i> Flat-Rate Monthly Plans</span>
+                            <span class="hero-trust-item"><i class="fas fa-check-circle" aria-hidden="true"></i> No Tax Upsells</span>
+                            <span class="hero-trust-item"><i class="fas fa-check-circle" aria-hidden="true"></i> Cancel Anytime</span>
                         </div>
                     </div>
                     <!-- Hero Left Content End -->
@@ -263,9 +277,23 @@
                 <div class="col-lg-6">
                     <!-- Hero Image Start -->
                     <div class="hero-image">
+                        <div class="hero-float-card hero-float-top" aria-hidden="true">
+                            <div class="hero-float-icon"><i class="fas fa-file-invoice-dollar"></i></div>
+                            <div class="hero-float-text">
+                                <strong>Monthly Reconciled</strong>
+                                <span>P&amp;L &amp; Balance Sheet Ready</span>
+                            </div>
+                        </div>
                         <figure>
-                            <img src="images/hero-img.png" alt="B LEDGER BOOKKEEPING monthly bookkeeping services for US small businesses">
+                            <img src="images/hero-img.png" width="558" height="571" alt="B LEDGER BOOKKEEPING monthly bookkeeping services for US small businesses">
                         </figure>
+                        <div class="hero-float-card hero-float-bottom" aria-hidden="true">
+                            <div class="hero-float-icon"><i class="fas fa-shield-alt"></i></div>
+                            <div class="hero-float-text">
+                                <strong>Encrypted &amp; Confidential</strong>
+                                <span>Protected Bookkeeping Records</span>
+                            </div>
+                        </div>
                     </div>
                     <!-- Hero Image End -->
                 </div>
@@ -303,7 +331,7 @@
                         <!-- About Image Start -->
                         <div class="about-image">
                             <figure class="image-anime reveal">
-                                <img src="images/sample/aboutus.jpg" alt="Dedicated bookkeeping team at B LEDGER BOOKKEEPING">
+                                <img src="images/sample/aboutus.jpg" loading="lazy" alt="Dedicated bookkeeping team at B LEDGER BOOKKEEPING">
                             </figure>
                         </div>
                         <!-- About Image End -->
@@ -315,7 +343,7 @@
             <div class="row">
                 <div class="col-md-4">
                     <!-- About Company Item Start -->
-                    <div class="about-company-item wow fadeInUp" data-wow-delay="0.25s">
+                    <div class="about-company-item reveal-up" data-delay="0">
                         <div class="icon-box">
                             <img src="images/icon-about-company-1.svg" alt="Long-term client partnerships for US bookkeeping">
                         </div>
@@ -328,7 +356,7 @@
 
                 <div class="col-md-4">
                     <!-- About Company Item Start -->
-                    <div class="about-company-item wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="about-company-item reveal-up" data-delay="100">
                         <div class="icon-box">
                             <img src="images/icon-about-company-2.svg" alt="Tailored bookkeeping plans for US freelancers and small businesses">
                         </div>
@@ -341,7 +369,7 @@
 
                 <div class="col-md-4">
                     <!-- About Company Item Start -->
-                    <div class="about-company-item wow fadeInUp" data-wow-delay="0.75s">
+                    <div class="about-company-item reveal-up" data-delay="200">
                         <div class="icon-box">
                             <img src="images/icon-about-company-3.svg" alt="Secure cloud bookkeeping software and encrypted dashboard">
                         </div>
@@ -377,17 +405,17 @@
                 <!-- Section Title Content End -->
             </div>
             </div>
-            <div class="row">
+            <div class="row align-items-stretch">
                 <div class="col-lg-4">
                    <!-- Pricing Box Start -->
-                   <div class="pricing-box wow fadeInUp" data-wow-delay="0.25s" style="visibility: visible; animation-delay: 0.25s; animation-name: fadeInUp;">
+                   <div class="pricing-box reveal-up" data-delay="0">
                       <!-- Pricing Box Header Start -->
                       <div class="pricing-box-header">
                          <div class="pricing-box-title">
                             <h2>Basic</h2>
                          </div>
                          <div class="pricing-box-content">
-                            <h3>$149 /month</h3>
+                            <div class="pricing-plan-price"><sup>$</sup>149<span>/month</span></div>
                             <p>For freelancers up to 75 transactions</p>
                          </div>
                       </div>
@@ -405,19 +433,25 @@
                          </ul>
                       </div>
                       <!-- Pricing Box Body End -->
+                      <!-- Pricing Box Footer Start -->
+                      <div class="pricing-box-footer">
+                         <a href="#contact" class="plan-cta-btn plan-cta-btn-outline js-select-plan" data-plan="Basic ($149/month)">Choose Basic</a>
+                      </div>
+                      <!-- Pricing Box Footer End -->
                    </div>
                    <!-- Pricing Box End -->
                 </div>
                 <div class="col-lg-4">
                    <!-- Pricing Box Start -->
-                   <div class="pricing-box wow fadeInUp" data-wow-delay="0.5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInUp;">
+                   <div class="pricing-box pricing-box-featured reveal-up" data-delay="120">
+                      <div class="pricing-popular-badge">Most Popular</div>
                       <!-- Pricing Box Header Start -->
                       <div class="pricing-box-header">
                          <div class="pricing-box-title">
-                            <h2>Growth (Most Popular)</h2>
+                            <h2>Growth</h2>
                          </div>
                          <div class="pricing-box-content">
-                            <h3>$249 /month</h3>
+                            <div class="pricing-plan-price"><sup>$</sup>249<span>/month</span></div>
                             <p>76–250 transactions</p>
                          </div>
                       </div>
@@ -436,19 +470,24 @@
                          </ul>
                       </div>
                       <!-- Pricing Box Body End -->
+                      <!-- Pricing Box Footer Start -->
+                      <div class="pricing-box-footer">
+                         <a href="#contact" class="plan-cta-btn plan-cta-btn-solid js-select-plan" data-plan="Growth ($249/month)">Choose Growth</a>
+                      </div>
+                      <!-- Pricing Box Footer End -->
                    </div>
                    <!-- Pricing Box End -->
                 </div>
                 <div class="col-lg-4">
                    <!-- Pricing Box Start -->
-                   <div class="pricing-box wow fadeInUp" data-wow-delay="0.75s" style="visibility: visible; animation-delay: 0.75s; animation-name: fadeInUp;">
+                   <div class="pricing-box reveal-up" data-delay="240">
                       <!-- Pricing Box Header Start -->
                       <div class="pricing-box-header">
                          <div class="pricing-box-title">
                             <h2>Advanced</h2>
                          </div>
                          <div class="pricing-box-content">
-                            <h3>$449 /month</h3>
+                            <div class="pricing-plan-price"><sup>$</sup>449<span>/month</span></div>
                             <p>250+ transactions</p>
                          </div>
                       </div>
@@ -467,9 +506,23 @@
                          </ul>
                       </div>
                       <!-- Pricing Box Body End -->
+                      <!-- Pricing Box Footer Start -->
+                      <div class="pricing-box-footer">
+                         <a href="#contact" class="plan-cta-btn plan-cta-btn-outline js-select-plan" data-plan="Advanced ($449/month)">Choose Advanced</a>
+                      </div>
+                      <!-- Pricing Box Footer End -->
                    </div>
                    <!-- Pricing Box End -->
                 </div>
+             </div>
+             <div class="service-trust-bar reveal-up" data-delay="120">
+                <div class="service-trust-items">
+                   <span><i class="fas fa-lock" aria-hidden="true"></i> Secure Data Encryption</span>
+                   <span><i class="fas fa-briefcase" aria-hidden="true"></i> US Small Business Ready</span>
+                   <span><i class="fas fa-calendar-check" aria-hidden="true"></i> Cancel Anytime</span>
+                   <span><i class="fas fa-ban" aria-hidden="true"></i> No Contracts</span>
+                </div>
+                <p class="service-trust-disclaimer">*Bookkeeping services only. No tax preparation or filing included.</p>
              </div>
         </div>
     </div>
@@ -497,26 +550,26 @@
                     <!-- State Image Counter Start -->
                     <div class="state-image-counter-1">
                         <!-- Counter Box Start -->
-                        <div class="counter-box wow fadeInUp">
+                        <div class="counter-box reveal-up" data-delay="0">
                             <div class="counter-content">
-                                <h3><span class="counter">75</span>+</h3>
+                                <h3><span class="counter">75</span><span class="counter-plus">+</span></h3>
                                 <p>Monthly Reconciliations &amp; Reports Delivered</p>
                             </div>
                         </div>
                         <!-- Counter Box End -->
 
                         <!-- Counter Box Image Start -->
-                        <div class="counter-box counter-image wow fadeInUp" data-wow-delay="0.25s">
+                        <div class="counter-box counter-image reveal-up" data-delay="100">
                             <figure class="image-anime">
-                                <img src="images/counter-img-1.jpg" alt="Peace of mind with monthly US bookkeeping from B LEDGER BOOKKEEPING">
+                                <img src="images/counter-img-1.jpg" loading="lazy" alt="Peace of mind with monthly US bookkeeping from B LEDGER BOOKKEEPING">
                             </figure>
                         </div>
                         <!-- Counter Box Image End -->
 
                         <!-- Counter Box Start -->
-                        <div class="counter-box wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="counter-box reveal-up" data-delay="200">
                             <div class="counter-content">
-                                <h3><span class="counter">25</span>+</h3>
+                                <h3><span class="counter">25</span><span class="counter-plus">+</span></h3>
                                 <p>US Small Businesses &amp; Freelancers Served</p>
                             </div>
                         </div>
@@ -527,26 +580,26 @@
                     <!-- State Image Counter Start -->
                     <div class="state-image-counter-2">
                         <!-- Counter Box Image Start -->
-                        <div class="counter-box counter-image wow fadeInUp" data-wow-delay="0.75s">
+                        <div class="counter-box counter-image reveal-up" data-delay="100">
                             <figure class="image-anime">
-                                <img src="images/counter-img-2.jpg" alt="Transparent and affordable pricing for US bookkeeping services">
+                                <img src="images/counter-img-2.jpg" loading="lazy" alt="Transparent and affordable pricing for US bookkeeping services">
                             </figure>
                         </div>
                         <!-- Counter Box Image End -->
 
                         <!-- Counter Box Start -->
-                        <div class="counter-box wow fadeInUp" data-wow-delay="1s">
+                        <div class="counter-box reveal-up" data-delay="200">
                             <div class="counter-content">
-                                <h3><span class="counter">250</span>+</h3>
+                                <h3><span class="counter">250</span><span class="counter-plus">+</span></h3>
                                 <p>Hours Saved for US Clients through Streamlined Bookkeeping</p>
                             </div>
                         </div>
                         <!-- Counter Box End -->
 
                         <!-- Counter Box Image Start -->
-                        <div class="counter-box counter-image wow fadeInUp" data-wow-delay="1.25s">
+                        <div class="counter-box counter-image reveal-up" data-delay="300">
                             <figure class="image-anime">
-                                <img src="images/counter-img-3.jpg" alt="Using secure cloud bookkeeping technology for accuracy and efficiency">
+                                <img src="images/counter-img-3.jpg" loading="lazy" alt="Using secure cloud bookkeeping technology for accuracy and efficiency">
                             </figure>
                         </div>
                         <!-- Counter Box Image End -->
@@ -583,10 +636,10 @@
             <div class="row">
                 <div class="col-lg-12">
                     <!-- Why Choose Image Box Start -->
-                    <div class="why-choose-image-box wow fadeInUp" data-wow-delay="0.25s">
+                    <div class="why-choose-image-box reveal-up" data-delay="0">
                         <!-- Why Choose Image Start -->
                         <div class="why-choose-image">
-                            <img src="images/why-choose-us-img.jpg" alt="Comprehensive US small business bookkeeping solutions">
+                            <img src="images/why-choose-us-img.jpg" loading="lazy" alt="Comprehensive US small business bookkeeping solutions">
                         </div>
                         <!-- Why Choose Image End -->
 
@@ -607,7 +660,7 @@
             <div class="row">
                 <div class="col-lg-4">
                     <!-- Why Choose Item Start -->
-                    <div class="why-choose-item wow fadeInUp" data-wow-delay="0.25s">
+                    <div class="why-choose-item reveal-up" data-delay="0">
                         <div class="icon-box">
                             <img src="images/icon-why-choose-1.svg" alt="Experienced bookkeepers at B LEDGER BOOKKEEPING">
                         </div>
@@ -621,7 +674,7 @@
 
                 <div class="col-lg-4">
                     <!-- Why Choose Item Start -->
-                    <div class="why-choose-item wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="why-choose-item reveal-up" data-delay="100">
                         <div class="icon-box">
                             <img src="images/icon-why-choose-2.svg" alt="Happy US small business client praising B LEDGER BOOKKEEPING">
                         </div>
@@ -635,7 +688,7 @@
 
                 <div class="col-lg-4">
                     <!-- Why Choose Item Start -->
-                    <div class="why-choose-item wow fadeInUp" data-wow-delay="0.75s">
+                    <div class="why-choose-item reveal-up" data-delay="200">
                         <div class="icon-box">
                             <img src="images/icon-why-choose-3.svg" alt="US business growth with clean books from B LEDGER BOOKKEEPING">
                         </div>
@@ -685,7 +738,7 @@
                             <div class="col-lg-5">
                                 <!-- Footer Logo Start -->
                                 <div class="footer-logo">
-                                    <img src="images/footer-logo.svg" alt="B LEDGER BOOKKEEPING logo">
+                                    <img src="images/logo_new.png" width="260" height="66" alt="B LEDGER BOOKKEEPING logo">
                                 </div>
                                 <!-- Footer Logo End -->
                             </div>
@@ -748,9 +801,24 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="subscribe-btn">
-                                                <button type="submit" class="btn-default">send now</button>
+                                            <div class="human-captcha-box mt-3 mb-2" id="humanCaptchaBox">
+                                                <label class="human-captcha-check" for="humanCheck">
+                                                    <input type="checkbox" id="humanCheck">
+                                                    <span>I am human</span>
+                                                </label>
+                                                <div class="human-captcha-math">
+                                                    <span id="captchaQuestion" class="human-captcha-question" aria-live="polite">4 + 3 =</span>
+                                                    <input type="text" id="captchaAnswer" inputmode="numeric" pattern="[0-9]*" maxlength="2" class="human-captcha-input" placeholder="?" aria-label="Solve the security math question">
+                                                    <button type="button" id="captchaRefresh" class="human-captcha-refresh" aria-label="New verification question" title="New question">
+                                                        <i class="fas fa-sync-alt" aria-hidden="true"></i>
+                                                    </button>
+                                                </div>
                                             </div>
+                                            <p id="captchaError" class="small mb-2" style="display: none; color: #FF8159;">Please check "I am human" and solve the math check.</p>
+                                            <div class="subscribe-btn">
+                                                <button type="submit" id="contactSubmitBtn" class="btn-default">send now</button>
+                                            </div>
+                                            <div id="contactStatus" class="contact-form-status" role="status" aria-live="polite"></div>
                                         </form>
                                     </div>
                                     <!-- Newsletters Form End -->
@@ -841,6 +909,14 @@
         </div>
     </footer>
     <!-- Footer End -->
+    <!-- Back to Top Button -->
+    <button type="button" id="backToTop" class="back-to-top" aria-label="Back to top" title="Back to top">
+        <svg class="back-to-top-ring" viewBox="0 0 48 48" aria-hidden="true">
+            <circle class="back-to-top-track" cx="24" cy="24" r="21"></circle>
+            <circle class="back-to-top-progress" cx="24" cy="24" r="21"></circle>
+        </svg>
+        <i class="fas fa-arrow-up" aria-hidden="true"></i>
+    </button>
     <!-- Jquery Library File -->
     <script src="js/jquery-3.7.1.min.js"></script>
     <!-- Bootstrap js file -->
@@ -859,20 +935,6 @@
 	<script src="js/SplitText.js"></script>
     <script src="js/ScrollTrigger.min.js"></script>
     <!-- Main Custom js file -->
-    <script src="js/function.js"></script>
-    <!-- Contact Form Bot Timing Guard -->
-    <script>
-        (function () {
-            var form = document.getElementById('newslettersForm');
-            var loadedAt = Date.now();
-            if (!form) return;
-            form.addEventListener('submit', function (e) {
-                var botcheck = form.querySelector('input[name="botcheck"]');
-                if ((botcheck && botcheck.checked) || (Date.now() - loadedAt < 1500)) {
-                    e.preventDefault();
-                }
-            });
-        })();
-    </script>
+    <script src="js/function.js?v=5"></script>
 </body>
 </html>
